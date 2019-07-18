@@ -1,0 +1,13 @@
+module.exports={
+    devServer:{
+       proxy:{
+           "/vip":{
+               "target":"https://mapi.vip.com",
+               "changeOrigin":true,
+               "pathRewrite":{
+                   "^/vip":"/"
+               }
+           }
+       } 
+    } 
+ }
